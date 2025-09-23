@@ -1,2 +1,2 @@
 # GerenciamentoEstoqueSuperior
-Projeto sobr egerenciamento de estoque no Superior do Senai
+Projeto sobre gerenciamento de estoque no Superior do Senai
