@@ -12,8 +12,8 @@ public interface EmpresaRepository extends JpaRepository<EmpresaModel,Integer> {
     Optional<EmpresaModel> findByCdEmpresa(Integer cdEmpresa);
     Optional<EmpresaModel> findByNuCnpj(String nuCnpj);
 
-    @Query("SELECT emp FROM EmpresaModel emp Where emp.flativo = 'S'")
-    List<EmpresaModel> findAllByFlativo();
+    @Query("SELECT emp FROM EmpresaModel emp Where emp.flAtivo = 'S'")
+    List<EmpresaModel> findByFlaAtivo();
 
     @Transactional
     Optional<EmpresaModel> deleteByCdEmpresa(Integer cdEmpresa);
