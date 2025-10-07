@@ -13,7 +13,7 @@ public interface EmpresaRepository extends JpaRepository<EmpresaModel,Integer> {
     Optional<EmpresaModel> findByNuCnpj(String nuCnpj);
 
     @Query("SELECT emp FROM EmpresaModel emp Where emp.flAtivo = 'S'")
-    List<EmpresaModel> findByFlaAtivo();
+    List<EmpresaModel> findByFlAtivo();
 
     @Transactional
     Optional<EmpresaModel> deleteByCdEmpresa(Integer cdEmpresa);

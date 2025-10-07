@@ -28,7 +28,7 @@ public class EmpresaService {
     }
 
     public List<EmpresaModel> listarEmpresasAtivas(){
-        return rep.findByFlaAtivo();
+        return rep.findByFlAtivo();
     }
     public List<EmpresaModel> listarTodasEmpresas(){
         return rep.findAll();
