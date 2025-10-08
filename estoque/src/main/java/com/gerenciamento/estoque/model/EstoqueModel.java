@@ -16,15 +16,15 @@ public class EstoqueModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CDESTOQUE")
-    private Integer cdestoque;
+    private Integer cdEstoque;
 
-    @Column(name = "NMESTOQUE")
-    private String nmestoque;
+    @Column(name = "CDLOCALESTOQUE")
+    private Integer cdLocalEstoque;
 
-    @Column(name = "DSESTOQUE")
-    private String dsestoque;
+    @Column(name = "QTDESTOQUE")
+    private Integer qtdEstoque;
 
-    @Column(name = "FLATIVO")
+    @Column(name = "FLATIVO",length = 1,nullable = false)
     private String flAtivo;
 
 }
